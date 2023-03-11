@@ -3,24 +3,58 @@
   padding: 0;
   box-sizing: border-box;
 }
+.css html {
+  font-size: 75%;
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  html {
+    font-size: 50%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  html {
+    font-size: 40%;
+  }
+}
+@media only screen and (max-width: 300px) {
+  html {
+    font-size: 30%;
+  }
+}
+@media only screen and (max-width: 200px) {
+  html {
+    font-size: 25%;
+  }
+}
+@media only screen and (max-width: 100px) {
+  html {
+    font-size: 15%;
+  }
+}
 .App {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  /* height: 100vh; */
 }
-.App-body {
-  flex: 1;
-}
+
 .App-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 0.1rem solid black;
 }
-.App-header > img {
+.logoImg {
   cursor: pointer;
+  height: 7rem;
+  object-fit: contain;
 }
+
 .App-header > ul {
   display: flex;
   list-style-type: none;
@@ -29,6 +63,11 @@
   padding-right: 5rem;
   cursor: pointer;
 }
+.App-body {
+  height: 100vh;
+  background-color: green;
+}
 .App-footer {
-  height: 30px;
+  height: 10rem;
+  background-color: red;
 }

@@ -63,11 +63,25 @@
   padding-right: 5rem;
   cursor: pointer;
 }
+.App {
+  display: flex;
+  flex-direction: column;
+}
 .App-body {
-  height: 100vh;
-  background-color: green;
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.AppBody {
+  display: flex;
+  flex-wrap: wrap;
 }
 .App-footer {
   height: 10rem;
   background-color: red;
+}
+.bodyCards {
+  display: flex;
+  flex-wrap: wrap;
 }

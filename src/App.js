@@ -1,4 +1,6 @@
 import "./App.css";
+import { Body } from "./components/Body";
+import { RestrauntsCard } from "./components/RestrauntsCard/RestrauntsCard";
 import logo from "./Media/images.png";
 
 function App() {
@@ -16,7 +18,10 @@ function App() {
           <li>Cart</li>
         </ul>
       </header>
-      <body className="App-body">efr</body>
+      <div className="AppBody">
+        <Body />
+      </div>
+
       <footer className="App-footer">sdf</footer>
     </div>
   );

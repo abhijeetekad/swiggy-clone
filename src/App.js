@@ -1,30 +1,42 @@
 import "./App.css";
+import { About } from "./components/AboutUs/About";
 import { Body } from "./components/Body";
-import { RestrauntsCard } from "./components/RestrauntsCard/RestrauntsCard";
-import logo from "./Media/images.png";
-
+import { Cart } from "./components/Cart/Cart";
+import { Contact } from "./components/Contact/Contact";
+import { Error } from "./components/Error";
+import { Footer } from "./components/Footer/Footer";
+import { Navbar } from "./components/Navbar/Navbar";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <a href="/">
-          <img className="logoImg" src={logo} />
-        </a>
-
-        <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
-          <li>Cart</li>
-        </ul>
-      </header>
+      <Navbar />
       <div className="AppBody">
         <Body />
       </div>
-
-      <footer className="App-footer">sdf</footer>
+      <Footer />
     </div>
   );
 }
+const appRouter = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <Error />,
+  },
+  {
+    path: "/about",
+    element: <About />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+  {
+    path: "/cart",
+    element: <Cart />,
+  },
+]);
+export { appRouter };
 
-export default App;
+// export default App;

@@ -14,7 +14,7 @@ const RestrauntsCard = (data) => {
         {" "}
         <p>{costForTwo}</p>
         <p>{maxDeliveryTime}</p>
-        <a>order now</a>
+        <button>order now</button>
       </div>
     </div>
   );
